@@ -1,0 +1,41 @@
+.headerPanel {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: min(500px, 95vw, 95vh - 35%);
+    font-size: min(2.5vw, 2vh);
+    animation: fade-in-panel 500ms;
+}
+
+.adbBlockPanel {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30%;
+}
+
+.adbBlock {
+    background-color: aquamarine;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10%;
+    padding: 50%;
+    color: #333;
+}
+
+.gameTitle {
+    font-size: 2em;
+}
+
+@keyframes fade-in-panel {
+    from {
+        opacity: 0;
+        width: 100px;
+    }
+
+    to {
+        width: min(500px, 95vw, 95vh - 35%);
+    }
+}
